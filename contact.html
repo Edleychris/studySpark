@@ -1,33 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Find StudySpark company information and explore a front-end demonstration contact form.">
-  <title>Contact Us | StudySpark</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="index.html">StudySpark</a>
-    <!-- A real checkbox keeps the CSS-only menu keyboard accessible. -->
-    <input class="menu-toggle" type="checkbox" id="menu-toggle">
-    <label class="menu-button" for="menu-toggle"><span class="burger-lines" aria-hidden="true">☰</span><span>Menu</span></label>
-    <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="resources.html">Learning Resources</a>
-<a href="contact.html" aria-current="page">Contact Us</a></nav>
-  </div>
-</header>
-<main id="main-content">
-
-<section class="page-banner"><div class="container"><p class="eyebrow">Contact Us</p><h1>Let’s talk learning.</h1><p>Learn more about StudySpark and our digital study tools.</p></div></section>
-<section class="section"><div class="container contact-layout"><div class="contact-info"><h2>Company information</h2><p><strong>StudySpark</strong><br>Ignite Your Learning Potential</p><dl><dt>Industry</dt><dd>Educational Technology (EdTech)</dd><dt>Location</dt><dd>Greenland, USA</dd><dt>Email</dt><dd>Placeholder — company email not supplied.</dd><dt>Phone</dt><dd>Placeholder — company phone not supplied.</dd></dl><p class="small-text">StudySpark is an imaginary company. The location is reproduced as stated in its company profile.</p><div class="contact-image"><img src="images/notes.jpg" srcset="images/notes-480.jpg 480w, images/notes.jpg 1200w" sizes="(max-width: 700px) 92vw, (max-width: 1000px) 44vw, 300px" alt="Fountain pen resting on handwritten notes" width="1200" height="800" loading="lazy"></div></div>
-<div class="contact-form-panel"><h2>Send an enquiry</h2><p id="form-note" class="form-note">Front-end demonstration only. You can fill in the fields, but messages cannot be sent or saved.</p><form aria-describedby="form-note"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><label for="topic">What would you like to discuss?</label><select id="topic" name="topic"><option value="general">General enquiry</option><option value="tools">Study tools</option><option value="resources">Learning resources</option></select><label for="message">Your message</label><textarea id="message" name="message" rows="6" required></textarea><button class="button" type="button" disabled>Send message (demo only)</button></form></div></div></section>
-<section class="cta-section"><div class="container"><div class="cta-box"><div><h2>Keep your learning moving.</h2><p>Discover the learning tools behind StudySpark.</p></div><a class="button button-outline" href="resources.html">Explore resources</a></div></div></section>
-</main>
-<footer class="site-footer"><div class="container"><p>Copyright &copy; 2026 StudySpark</p><p class="footer-note">An imaginary company · CSS group assignment</p></div></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find StudySpark company information and explore a front-end demonstration contact form."
+    />
+    <title>Contact Us | StudySpark</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">StudySpark</a>
+        <!-- A real checkbox keeps the CSS-only menu keyboard accessible. -->
+        <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+        <label class="menu-button" for="menu-toggle"
+          ><span class="burger-lines" aria-hidden="true">☰</span
+          ><span>Menu</span></label
+        >
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="resources.html">Learning Resources</a>
+          <a href="contact.html" aria-current="page">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-banner">
+        <div class="container">
+          <p class="eyebrow">Contact Us</p>
+          <h1>Let’s talk learning.</h1>
+          <p>Learn more about StudySpark and our digital study tools.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-info">
+            <h2>Company information</h2>
+            <p>
+              <strong>StudySpark</strong><br />Ignite Your Learning Potential
+            </p>
+            <dl>
+              <dt>Industry</dt>
+              <dd>Educational Technology (EdTech)</dd>
+              <dt>Location</dt>
+              <dd>Greenland, USA</dd>
+              <dt>Email</dt>
+              <dd>Placeholder — company email not supplied.</dd>
+              <dt>Phone</dt>
+              <dd>Placeholder — company phone not supplied.</dd>
+            </dl>
+            <p class="small-text">
+              StudySpark is an imaginary company. The location is reproduced as
+              stated in its company profile.
+            </p>
+            <div class="contact-image">
+              <img
+                src="images/notes.jpg"
+                srcset="images/notes-480.jpg 480w, images/notes.jpg 1200w"
+                sizes="(max-width: 700px) 92vw, (max-width: 1000px) 44vw, 300px"
+                alt="Fountain pen resting on handwritten notes"
+                width="1200"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="contact-form-panel">
+            <h2>Send an enquiry</h2>
+            <p id="form-note" class="form-note">
+              Front-end demonstration only. You can fill in the fields, but
+              messages cannot be sent or saved.
+            </p>
+            <form aria-describedby="form-note">
+              <label for="name">Your name</label
+              ><input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              /><label for="email">Email address</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              /><label for="topic">What would you like to discuss?</label
+              ><select id="topic" name="topic">
+                <option value="general">General enquiry</option>
+                <option value="tools">Study tools</option>
+                <option value="resources">Learning resources</option></select
+              ><label for="message">Your message</label
+              ><textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea
+              ><button class="button" type="button" disabled>
+                Send message (demo only)
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h2>Keep your learning moving.</h2>
+              <p>Discover the learning tools behind StudySpark.</p>
+            </div>
+            <a class="button button-outline" href="resources.html"
+              >Explore resources</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="resources.html">Learning Resources</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>Copyright &copy; 2026 StudySpark</p>
+        <p class="footer-note">An imaginary company · CSS group assignment</p>
+      </div>
+    </footer>
+  </body>
 </html>
