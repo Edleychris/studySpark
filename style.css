@@ -87,6 +87,25 @@ input, textarea, select { width: 100%; min-width: 0; margin-bottom: 20px; paddin
 textarea { resize: vertical; }
 button:disabled { cursor: not-allowed; background: #1F2937; border-color: #1F2937; color: #E5E7EB; }
 
+/* footer */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+  text-decoration: underline;
+}
+
 /* Tablet: two-column cards and a checkbox-controlled burger menu */
 @media (max-width: 1000px) {
   .header-inner { position: relative; gap: 0; padding: 20px 0; }
@@ -121,4 +140,7 @@ button:disabled { cursor: not-allowed; background: #1F2937; border-color: #1F293
   .button-outline { flex-shrink: 1; }
   .resource-card { flex-basis: 100%; }
   .page-banner { padding: 36px 0 44px; }
+  .footer-nav a {
+    padding: 0.5rem 0.25rem;
+  }
 }
